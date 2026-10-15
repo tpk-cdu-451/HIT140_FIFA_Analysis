@@ -21,11 +21,11 @@
 │       └── task2_2_team_goals_regression.ipynb
 ├── raw_datasets/
 │      ├── objective_1/
-│           ├──  Dataset_task_1
-│           ├──  Dataset_task_2
-│           ├──  Dataset_task_3
-│           ├──  Dataset_task_4
-│     └── objective_2/
+│      │    ├──  Dataset_task_1
+│      │    ├──  Dataset_task_2
+│      │    ├──  Dataset_task_3
+│      │    ├──  Dataset_task_4
+│      └── objective_2/
 │           ├──  Dataset2.1
 │           ├──  Dataset2.2
 └── README.md
