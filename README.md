@@ -1,8 +1,60 @@
-# FIFA World Cup 2026 | Football Match Prediction Using Regression
+# FIFA World Cup 2026 |  Statistical Analysis & Match Outcome Modeling
 
-This project explores how **pre-match football statistics** can be used to predict match outcomes using Python and regression techniques. It includes two separate prediction tasks, exploratory data analysis, model comparison, and evaluation of prediction errors.
 
-## Project Objectives
+**Unit:** HIT140 — Foundation of DataScience  
+**Project:** Group Analytics Assessment (FIFA World Cup 2026)  
+**Contributors:** Karma Choden | Mohith Suggala | Nikhitha Karne | Tejas Koradiya
+
+---
+---
+
+## Directory Structure
+```text
+├── Analysis_Files/
+│   ├── objective_1/
+│   │   ├── task1_cards_per_foul.ipynb
+│   │   ├── task2_goalkeeper_performance.ipynb
+│   │   ├── task3_ball_possession.ipynb
+│   │   └── task4_shooting_efficiency.ipynb
+│   └── objective_2/
+│       ├── task2_1_goal_difference_regression.ipynb
+│       └── task2_2_team_goals_regression.ipynb
+├── raw_datasets/
+└── README.md
+```
+
+---
+
+## Data Sources
+
+The project utilizes data sourced from verified public football databases:
+* [FIFA Official Statistics](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/statistics): Official match reports, squad demographics, caps, and confederation rankings.
+* [FBref](https://fbref.com/en/): Detailed event logs, player-level performance metrics, and qualifying records.
+* [The Stats Don't Lie](https://www.thestatsdontlie.com/football/world-cup-2026/): Tournament situational indexes, clean sheet ratios, and tactical indicators.
+* [Transfermarkt](https://www.transfermarkt.com): Pre-tournament market valuations and managerial tenure.
+
+---
+
+## Objective 1: Exploratory & Inferential Statistics
+
+# Summary
+
+This repository contains statistical analysis, hypothesis testing, and pre-match linear regression models built on the FIFA World Cup 2026 tournament datasets. The project explores team disciplinary trends, goalkeeper impact across tournament stages, game control baselines, player shooting performance, and predictive outcome modeling.
+
+Each task investigates a distinct focal question using data wrangling, descriptive analysis, 95% confidence intervals, and hypothesis testing.
+
+| Task | Focal Investigation Question | Metric / Variable | Statistical Test | 
+| :--- | :--- | :--- | :--- |
+| **1. Disciplinary Trends** | Does the rate of cards (Yellow & Red) received per foul differ significantly between losing and winning teams? | Cards per foul ratio ($\text{Cards} / \text{Fouls}$) | **Two-Sample t-Test** (Independent) |
+| **2. Goalkeeping Impact** | How do goals conceded against goalkeepers vary across teams, and do they significantly distinguish teams reaching the knockout stages? | Goals conceded per 90 minutes | **Two-Sample t-Test** (Independent) |
+| **3. Possession Baseline** | What was the average ball possession percentage across tournament teams, and was it significantly different from the 50% benchmark? | Match possession share (%) | **One-Sample t-Test** ($\mu_0 = 50\%$) |
+| **4. Attacking Output** | How do shooting opportunities and shooting accuracy influence goal scoring across player positions (Forwards vs. Midfielders)? | Shot conversion & goals per attempt | **Two-Sample t-Test** (Independent) |
+
+---
+
+
+
+## Objectives 2 
 
 ### Objective 2.1 — Predict Goal Difference
 Predict the **goal difference between two opposing teams** using a dataset of **104 matches** and eight pre-match explanatory variables.
