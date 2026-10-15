@@ -85,9 +85,9 @@ All explanatory variables satisfy the pre-match availability requirement (collec
 
 | Feature ID | Explanatory Variable ($X$) | Unit | Source | Overlap with 2.1 |
 | :--- | :--- | :--- | :--- | :---: |
-| **Var 1** | `Squad_Market_Value_EUR_M` | EUR Millions | Transfermarkt | No |
-| **Var 2** | `Opponent_FIFA_Points` | Points | FIFA Official | No |
-| **Var 3** | `Match_Stakes_Index` | Scale (1–10) | The Stats Don't Lie | **Yes (1/4)** |
+| **Var 1** | `Team_FIFA_Points` | Points | FIFA Official | Yes |
+| **Var 2** | `Opp_FIFA_Points` | Points | FIFA Official | Yes |
+| **Var 3** | `Team_GF_Last5` | Scale (1–10) | The Stats Don't Lie | **Yes (1/4)** |
 | **Var 4** | `Team_Qualifying_Goals_Per_Game` | Goals / Match | FBref | No |
 | **Var 5** | `Squad_Career_Intl_Goals` | Goals | FIFA Official | No |
 | **Var 6** | `Manager_Tenure_Years` | Years | Transfermarkt | No |
